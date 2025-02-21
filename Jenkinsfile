@@ -2,23 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Execute') {
+        stage('Hello') {
             steps {
-                echo 'Execute'
-                bat 'javac Main.java'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing'
-            }
-        }
-stage('Run') {
-            steps {
-                echo 'In Run stage'
-                bat 'java Main'
+                echo 'Hello World'
+                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'first.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
             }
         }
     }
-    
 }
