@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Execute') {
             steps {
                 echo 'Execute'
                 bat 'javac Main.java'
