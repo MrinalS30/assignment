@@ -3,19 +3,7 @@
 <body>
 
 <h1>My First Heading</h1>
-<p>pipeline {
-    agent any
-
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-                publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'first.html', reportName: 'HTML Report', reportTitles: '', useWrapperFileDirectly: true])
-            }
-        }
-    }
-}
-</p>
+<p>My first paragraph.</p>
 
 </body>
 </html>
